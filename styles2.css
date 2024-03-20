@@ -1,0 +1,103 @@
+@import"https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.v-slider-bloc {
+    /* font-size: 30px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* border-bottom: 5px solid #333; */
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+
+/* titre de toutes les pages */
+
+.center-title {
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 1em;
+    }
+
+
+/* page 1 */
+
+
+
+.box-center {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+#name {
+    padding-bottom:1em;
+}
+.v-slider-bloc:nth-child(1){
+    background-color:antiquewhite ;
+
+}
+
+
+/* page 2 */
+
+.box-exp {
+    font-size: 0.8em;
+}
+
+        /* menu deroulant CV*/
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            position: relative;
+        }
+        .submenu {
+            display: none;
+            /* position: absolute; */
+            top: 100%;
+            left: 0;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+
+
+
+.v-slider-bloc:nth-child(2){
+    background-color:antiquewhite ;
+}
+.v-slider-bloc:nth-child(3){
+    background-color:antiquewhite ;
+}
+.v-slider-bloc:nth-child(4){
+    background-color:antiquewhite ;
+}
+.v-slider-bloc:nth-child(5){
+    background-color:antiquewhite ;
+}
