@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             //fermer les autres sous-menus :
             menuItems.forEach(function(item) {
                 if (item != menuItem) {
-                    item.querySelector('.submenu').getElementsByClassName.display ='none'
+                    item.querySelector('.submenu').style.display = 'none';
                 }
             });
 
