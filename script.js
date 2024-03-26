@@ -37,3 +37,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+// display project screenshot
+
+document.querySelector('.links-projet').addEventListener('mouseover', function() {
+        document.querySelector('.hover-img').style.display = 'block';
+    });
+
+document.querySelector('.links-projet').addEventListener('mouseout', function() {
+        document.querySelector('.hover-img').style.display = 'none';
+    });

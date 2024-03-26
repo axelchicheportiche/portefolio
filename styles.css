@@ -278,16 +278,14 @@ body {
             text-align: justify;
     }
 
-
-    /* .marge-top-prj2 {
-        padding-top: 5em;
-    } */
-
-
-
-
-
-
-
+    .hover-img {
+        height: 400px;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        border: solid 1px white;
+    }
 
 }
