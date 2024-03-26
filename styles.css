@@ -66,24 +66,43 @@ body {
     text-align: center;
 }
 
+.menu-link:hover {
+    color: blue;
+}
 
 #name {
     padding-bottom:1em;
 }
 .v-slider-bloc:nth-child(1){
-    background-color:antiquewhite ;
-
+    background-color:rgb(196, 231, 212) ;
 }
 
 .footer {
     margin-top: 3em;
 }
 
+/* Rotate HOME PAGE HOVER */
+.hvr-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    }
+    .hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg);
+    }
+
 
 /* PAGE 01 - EXPERIENCE */
 
 .v-slider-bloc:nth-child(2){
-    background-color:antiquewhite ;
+    background-color:rgb(202, 207, 227) ;
 }
 
 .box-exp {
@@ -118,7 +137,7 @@ body {
             display: none;
             top: 100%;
             left: 0;
-            background-color: blanchedalmond;
+            background-color: rgb(220, 225, 245);
             border-radius: 5px ;
             border: 1px solid #747474;
             padding: 0.5em;
@@ -147,6 +166,7 @@ body {
 }
 
 .box-prj {
+
     display: flex;
     flex-direction: column;
     padding: 1em;
@@ -178,13 +198,13 @@ body {
 }
 
 .v-slider-bloc:nth-child(5){
-    background-color:rgb(255, 221, 176) ;
+    background-color:#E5ECE9 ;
 }
 
 /*PAGE SKILLS 2*/
 
 .v-slider-bloc:nth-child(6){
-    background-color:rgb(255, 221, 176) ;
+    background-color:#E5ECE9 ;
 }
 
 
@@ -230,4 +250,44 @@ body {
 
 .marge-top {
     margin-top: 3em;
+}
+
+
+
+
+
+/* DESKTOP */
+
+
+@media only screen and (min-width: 1020px){
+
+    /* PAGE 01 - Experience */
+    .menu {
+        margin-left: 25em;
+        margin-right: 25em;
+    }
+
+    /* PAGE 02 - PROJET */
+
+    .box-desktop {
+        margin: 0em 10em 0em 10em;
+        padding-top: 7em;
+    }
+
+    .prj p {
+            text-align: justify;
+    }
+
+
+    /* .marge-top-prj2 {
+        padding-top: 5em;
+    } */
+
+
+
+
+
+
+
+
 }
