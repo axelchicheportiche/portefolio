@@ -252,7 +252,48 @@ body {
     margin-top: 3em;
 }
 
+/*iPhone SE*/
 
+@media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        *, ::before, ::after {
+            font-size: 13px;
+        }
+
+        /*PAGE 0 - HOME*/
+        .v-slider-bloc:nth-child(1) #name{
+            font-size: 1.8em;
+        }
+        .cat-link a {
+            font-size: 1.4em;
+        }
+        /*PAGE 1 - EXPERIENCE*/
+        .v-slider-bloc:nth-child(2) .titre-exp {
+            font-size: 13px
+        }
+        .v-slider-bloc:nth-child(2) {
+            font-size: 8px;
+        }
+        /* PAGE 03 - PROJET*/
+        #webtop {
+            margin-top: 2em;
+        }
+
+        /*PAGE $ - PROJET 2*/
+
+        .marge-top-se {
+            margin-top: 3em;
+        }
+        .marge-top-se-skills {
+            margin-top: 2em;
+        }
+
+
+
+}
 
 
 
@@ -286,6 +327,7 @@ body {
         left: 60%;
         transform: translate(-50%, -50%);
         border: solid 1px white;
+        display: none;
     }
 
 }
