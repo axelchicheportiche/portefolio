@@ -305,31 +305,94 @@ body {
 @media only screen and (min-width: 1020px){
 
     /* PAGE 01 - Experience */
-    .menu {
-        margin-left: 25em;
-        margin-right: 25em;
+        .menu {
+            margin-left: 25em;
+            margin-right: 25em;
+        }
+
+    /* PAGE 02 et 03 - PROJET */
+
+        .box-desktop {
+            margin: 0em 10em 0em 10em;
+            padding-top: 9em;
+        }
+
+        .box-desktop-prj-2 {
+            margin: 0em 10em 0em 10em;
+            padding-top: 11em;
+        }
+
+        .prj p {
+                text-align: justify;
+        }
+
+        .hover-img {
+            height: 400px;
+            width: auto;
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            border: solid 1px white;
+            display: none;
+        }
+
+    /*PAGE 04 Skills */
+
+    .v-slider-bloc:nth-child(5) .box-prj {
+        display: flex;
+        align-items: center;
     }
 
-    /* PAGE 02 - PROJET */
 
-    .box-desktop {
-        margin: 0em 10em 0em 10em;
-        padding-top: 7em;
+    .prj-page-1{
+        width: 20%;
+        height: auto;
+    }
+    .prj-page-1 .list-skills li {
+        margin-left: 3em;
     }
 
-    .prj p {
-            text-align: justify;
+    /*PAGE 05 Skills 2 */
+    .v-slider-bloc:nth-child(6) .box-prj-skills {
+        /* display: flex; */
+        align-items: center;
     }
 
-    .hover-img {
-        height: 400px;
-        width: auto;
-        position: absolute;
-        top: 50%;
-        left: 60%;
-        transform: translate(-50%, -50%);
-        border: solid 1px white;
-        display: none;
+    .v-slider-bloc:nth-child(6) .box-prj {
+        display: flex;
+        align-items: center;
     }
+    .prj-page-2{
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+    }
+    .prj-page-2 .list-skills li {
+        margin-left: 3em;
+    }
+
+
+    /* .prj-title {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+
+    .v-slider-bloc:nth-child(5) .box-prj {
+        margin-top: 2em;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    ul {
+        list-style-type: none;
+    } */
+
+
+
+
 
 }
