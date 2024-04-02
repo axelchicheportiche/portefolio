@@ -145,10 +145,18 @@ body {
             border: 1px solid #747474;
             padding: 0.5em;
             margin-top: 1em;
+
         }
 
-        .menu li:hover .submenu {
-            display: block;
+        .submenu-link {
+            font-weight: bold;
+            font-size: larger;
+            transition: transform 0.5s ease;
+
+        }
+        .submenu-link:hover {
+            transform: rotate(45deg);
+            color: green;
         }
 
 
