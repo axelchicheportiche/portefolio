@@ -21,18 +21,12 @@ body {
     height: 100dvh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-
 }
 
 .v-slider-bloc {
-    /* font-size: 30px; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    /* border-bottom: 5px solid #333; */
     height: 100dvh;
     scroll-snap-align: center;
+    overflow: hidden;
 }
 
 
@@ -48,6 +42,11 @@ body {
 
 
 /* PAGE 0 - HOME */
+
+.fullstack {
+    font-size: 1.3em;
+    font-weight: bold;
+}
 
 #retrocomputer {
     height: 200px;
@@ -101,6 +100,21 @@ body {
         transform: rotate(4deg);
     }
 
+.hvr-rotate-inv {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    }
+    .hvr-rotate-inv:hover, .hvr-rotate-inv:focus, .hvr-rotate-inv:active {
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg);
+    }
 
 /* PAGE 01 - EXPERIENCE */
 
@@ -109,10 +123,14 @@ body {
 }
 
 .box-exp {
+    position: relative;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     font-size: 0.8em;
-    padding-top: 2em;
-    padding: 1em 1em;
-    margin-top: 5.5em;
+    /* padding-top: 2em; */
+    /* padding: 1em 1em; */
+    /* margin-top: 5.5em; */
 
 }
 
@@ -177,9 +195,12 @@ body {
 }
 
 .box-prj {
-
-    display: flex;
-    flex-direction: column;
+    position: relative;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    /* display: flex;
+    flex-direction: column; */
     padding: 1em;
 }
 
@@ -188,7 +209,7 @@ body {
 }
 
 .prj-title {
-    margin-top: 1.3em;
+    margin-top: 3em;
     margin-bottom: 0.5em;
 }
 
@@ -209,7 +230,8 @@ body {
 }
 
 .v-slider-bloc:nth-child(5){
-    background-color:#E5ECE9 ;
+    background-color:rgb(0, 0, 0) ;
+    color: rgb(0, 255, 0);
 }
 
 /*PAGE SKILLS 2*/
@@ -326,17 +348,17 @@ body {
     /* PAGE 02 et 03 - PROJET */
 
         .box-desktop {
-            margin: 0em 10em 0em 10em;
-            padding-top: 9em;
+            margin-left: 10em;
+            margin-right: 10em;
         }
 
-        .box-desktop-prj-2 {
-            margin: 0em 10em 0em 10em;
-            padding-top: 11em;
+        .margin-top-3-em {
+            margin-top: 3em;
         }
 
         .prj p {
-                text-align: justify;
+            width: 80%;
+            text-align: justify;
         }
 
         .hover-img {
