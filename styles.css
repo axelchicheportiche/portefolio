@@ -128,10 +128,6 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     font-size: 0.8em;
-    /* padding-top: 2em; */
-    /* padding: 1em 1em; */
-    /* margin-top: 5.5em; */
-
 }
 
 .titre-exp {
@@ -224,7 +220,21 @@ body {
     color: rgb(170, 255, 238);
 }
 
-/*PAGE 04 - SKILL*/
+/*PAGE 04 - SKILLS*/
+
+.box-skills {
+    position: relative;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 2em;
+}
+
+.marge-skills {
+    margin-top: 1em;
+}
 
 .center {
     text-align: center;
@@ -241,6 +251,12 @@ body {
 }
 
 /*PAGE SKILLS 2*/
+
+.skills-title {
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+    /* color: rgb(202, 114, 202) */
+}
 
 .v-slider-bloc:nth-child(6){
     background-color:#E5ECE9 ;
@@ -385,10 +401,12 @@ body {
     }
 
 
-    .prj-page-1{
+    /* .prj-page-1{
         width: 20%;
         height: auto;
-    }
+    } */
+
+
     .prj-page-1 .list-skills li {
         margin-left: 3em;
     }
