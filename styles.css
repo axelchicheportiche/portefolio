@@ -4,6 +4,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+}
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 a {
@@ -14,6 +18,7 @@ a {
 body {
     font-family: 'Space Mono', monospace;
     font-size: 0.9rem;
+    list-style-type: none;
 }
 
 .container {
@@ -25,14 +30,9 @@ body {
 }
 
 .v-slider-bloc {
-    /* font-size: 30px; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    /* border-bottom: 5px solid #333; */
     height: 100dvh;
     scroll-snap-align: center;
+    overflow: hidden;
 }
 
 
@@ -48,6 +48,11 @@ body {
 
 
 /* PAGE 0 - HOME */
+
+.fullstack {
+    font-size: 1.3em;
+    font-weight: bold;
+}
 
 #retrocomputer {
     height: 200px;
@@ -101,6 +106,21 @@ body {
         transform: rotate(4deg);
     }
 
+.hvr-rotate-inv {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    }
+    .hvr-rotate-inv:hover, .hvr-rotate-inv:focus, .hvr-rotate-inv:active {
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg);
+    }
 
 /* PAGE 01 - EXPERIENCE */
 
@@ -109,11 +129,11 @@ body {
 }
 
 .box-exp {
+    position: relative;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     font-size: 0.8em;
-    padding-top: 2em;
-    padding: 1em 1em;
-    margin-top: 5.5em;
-
 }
 
 .titre-exp {
@@ -164,22 +184,30 @@ body {
 
 .v-slider-bloc:nth-child(3){
     background-color:rgb(0, 0, 0) ;
-    color: rgb(0, 255, 0);
+    color: rgb(0, 204, 85);
 }
 
 #webtop {
-    margin-top: -1em;
+    margin-top: 0.5em;
 }
 
 .linkprj {
     font-weight: bold;
-    text-decoration:underline
+    text-decoration:underline;
+    color:rgb(146, 146, 248);
+}
+
+.linkprj:hover {
+    cursor: pointer;
 }
 
 .box-prj {
-
-    display: flex;
-    flex-direction: column;
+    position: relative;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    /* display: flex;
+    flex-direction: column; */
     padding: 1em;
 }
 
@@ -188,16 +216,31 @@ body {
 }
 
 .prj-title {
-    margin-top: 1.3em;
+    margin-top: 3em;
     margin-bottom: 0.5em;
+    color: rgb(202, 114, 202)
 }
 
 .v-slider-bloc:nth-child(4){
     background-color:rgb(0, 0, 0) ;
-    color: rgb(0, 255, 0);
+    color: rgb(170, 255, 238);
 }
 
-/*PAGE 04 - SKILL*/
+/*PAGE 04 - SKILLS*/
+
+.box-skills {
+    position: relative;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 2em;
+}
+
+.marge-skills {
+    margin-top: 1em;
+}
 
 .center {
     text-align: center;
@@ -209,13 +252,26 @@ body {
 }
 
 .v-slider-bloc:nth-child(5){
-    background-color:#E5ECE9 ;
+    background-color:rgb(0, 0, 0) ;
+    color: rgb(170, 255, 238);
 }
 
 /*PAGE SKILLS 2*/
 
-.v-slider-bloc:nth-child(6){
+.skills-title {
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+    /* color: rgb(202, 114, 202) */
+}
+
+.margin-top-skills {
+    margin-top: 2em;
+}
+.v-slider-bloc:nth-child(7){
     background-color:#E5ECE9 ;
+    padding-top: 2em;
+
+
 }
 
 .prj-page-2 {
@@ -226,13 +282,13 @@ body {
 
 /* PAGE 05 - Formation */
 
-#form-top {
+/* #form-top {
     padding-top: 6em;
 }
 
 .v-slider-bloc:nth-child(7){
     background-color: #c7c7c7;
-}
+} */
 
 /* BOX CONTACT */
 
@@ -253,15 +309,21 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+
 }
 
 .box-contact-end {
-    width: 100vw;
-    height: 30vh;
+    /* width: 100vw; */
+    /* height: 30vh; */
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-top: 4em;
+    /* padding-top: 10em; */
+}
+
+.box-contact-end-2 {
+
+    display: none;
 }
 
 .marge-top {
@@ -306,7 +368,9 @@ body {
             margin-top: 2em;
         }
 
-
+        .box-contact-end {
+            padding-top: 1em;
+        }
 
 }
 
@@ -317,26 +381,31 @@ body {
 
 @media only screen and (min-width: 1020px){
 
+    /*BOX CONTACT*/
+    .box-contact {
+        margin-top: 3em;
+    }
+
     /* PAGE 01 - Experience */
         .menu {
             margin-left: 25em;
             margin-right: 25em;
         }
 
+
     /* PAGE 02 et 03 - PROJET */
 
-        .box-desktop {
-            margin: 0em 10em 0em 10em;
-            padding-top: 9em;
+        .prj {
+            padding: 15em;
         }
 
-        .box-desktop-prj-2 {
-            margin: 0em 10em 0em 10em;
-            padding-top: 11em;
+        .margin-top-3-em {
+            margin-top: 3em;
         }
 
         .prj p {
-                text-align: justify;
+            /* width: 80%; */
+            text-align: justify;
         }
 
         .hover-img {
@@ -358,10 +427,12 @@ body {
     }
 
 
-    .prj-page-1{
+    /* .prj-page-1{
         width: 20%;
         height: auto;
-    }
+    } */
+
+
     .prj-page-1 .list-skills li {
         margin-left: 3em;
     }
@@ -390,9 +461,6 @@ body {
         margin-left: 3em;
     }
 
-    .margin-top-skills {
-        margin-top: 2em;
-    }
 
 
     .v-slider-bloc:nth-child(7){
@@ -401,6 +469,15 @@ body {
         text-align: center;
     }
 
+    .box-contact-end-2 {
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        display:block ;
+    }
 
 
 
