@@ -228,6 +228,10 @@ body {
     text-decoration: underline;
 }
 
+.margin-top-3-em {
+    margin-top: 1.5em;
+}
+
 .prj-title {
     margin-top: 1.2em;
     margin-bottom: 0.5em;
@@ -271,6 +275,10 @@ body {
 }
 
 /*PAGE SKILLS 2*/
+
+/* .v-slider-bloc:nth-child(7) .box-skills {
+
+} */
 
 .skills-title {
     margin-top: 3em;
