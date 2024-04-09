@@ -419,6 +419,16 @@ body {
 
     /* PAGE 02 et 03 - PROJET */
 
+
+        .prj-title-link {
+            margin-top: 3em;
+            }
+
+        .prj-title {
+            margin-top: 3em;
+            }
+
+
         .prj {
             padding: 15em;
         }
