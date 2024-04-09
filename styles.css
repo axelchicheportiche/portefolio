@@ -137,6 +137,7 @@ body {
 }
 
 .titre-exp {
+    cursor: auto;
     display: flex;
     display: grid;
     font-size: 1.3em;
@@ -213,6 +214,17 @@ body {
 
 .prj {
     padding: 0.5em;
+}
+
+.prj-title-link {
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+    color: rgb(202, 114, 202)
+}
+
+.prj-title-link:hover {
+    color: rgb(199, 55, 199);
+    text-decoration: underline;
 }
 
 .prj-title {
