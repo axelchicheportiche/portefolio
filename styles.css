@@ -200,6 +200,7 @@ body {
 
 .linkprj:hover {
     cursor: pointer;
+    color:rgb(92, 92, 247);
 }
 
 .box-prj {
